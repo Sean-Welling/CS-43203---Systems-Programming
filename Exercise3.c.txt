@@ -1,0 +1,31 @@
+// Exercise 3
+// Counts the '1' bits in the binary representation of an integer
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+     unsigned n, count;
+
+     printf("Number: ");
+     if (scanf("%u", &n) != 1) {
+          fprintf(stderr, "Error: Expect number.\n");
+          exit(EXIT_FAILURE);
+     }
+     /*Enter code to count the 1 bits*/
+    // Iterate through all the bits
+    while (n > 0) {
+
+        // If current bit is 1
+        if (n & 1) {
+            count++;
+        }
+
+        n = n >> 1;
+    }
+
+
+     printf("Number of 1 bits: %u\n", count);
+     return 0;
+}
+

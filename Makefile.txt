@@ -1,0 +1,12 @@
+# Makefile  
+
+# Constants:
+  CC=gcc
+  CFLAGS=-I
+
+# Commands:
+  exercises: Exercise1.c Exercise2.c Exercise3.c 
+ 	  $(CC) exercises -o exercises 
+
+  clean: 
+	  $(RM) *.o*~

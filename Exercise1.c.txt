@@ -1,0 +1,25 @@
+// Exercise 1
+//A small program that reads in an integer and prints out its binary representation
+
+#include <stdlib.h>
+#include <stdio.h>
+
+// Binary converting function
+void ConvertToBin(unsigned n)
+{
+      if (n>1)
+          ConvertToBin(n / 2);
+
+     printf("%d", n % 2);
+}
+
+// Main Function
+int main(void)
+{
+    int num;
+    printf("Enter a number to be converted to binary: ");
+    scanf("%d", &num);  //Number to be converted to binary
+    printf("The binary representation of %d", num); printf(" is: ");
+    ConvertToBin(num); // Converts entered int to binary
+    return 0;
+}

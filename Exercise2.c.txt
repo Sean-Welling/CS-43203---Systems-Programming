@@ -1,0 +1,17 @@
+// Exercise2.c
+// Reads in an integer and prints out its hexadecimal representation
+#include <stdlib.h>
+#include <stdio.h>
+// Converts integer to hexadecimal function
+
+// Main Function
+int main()
+{
+     int num;
+     printf("Enter an integer to be converted to hexadecimal: ");
+     scanf("%d", &num); //Number to be converted to hexadecimal
+     printf("The hexadecimal representation of %d", num); printf(" is: ");
+     printf("%x\n", num); //Converts entered int to hexidecimal
+     return 0;
+}
+
